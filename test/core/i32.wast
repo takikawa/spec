@@ -43,7 +43,7 @@
 (assert_return (invoke "add" (i32.const 0x80000000) (i32.const 0x80000000)) (i32.const 0))
 (assert_return (invoke "add" (i32.const 0x3fffffff) (i32.const 1)) (i32.const 0x40000000))
 
-(assert_return (invoke "sub" (i32.const 1) (i32.const 1)) (i32.const 0))
+(assert_return (invoke "sub" (i32.const 1) (i32.const 1)) (i32.const 5))
 (assert_return (invoke "sub" (i32.const 1) (i32.const 0)) (i32.const 1))
 (assert_return (invoke "sub" (i32.const -1) (i32.const -1)) (i32.const 0))
 (assert_return (invoke "sub" (i32.const 0x7fffffff) (i32.const -1)) (i32.const 0x80000000))
