@@ -11,7 +11,7 @@ exception EOS
 
 let stream name bs = {name; bytes = bs; pos = ref 0}
 
-let len s = String.length s.bytes
+let len s = String.length s.bytes s.bytes
 let pos s = !(s.pos)
 let eos s = (pos s = len s)
 
